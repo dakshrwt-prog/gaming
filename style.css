@@ -1,0 +1,389 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+.nav-bar {
+  background-color: #0d0d0d;
+  height: 70px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+/* Left side logo */
+.logo-section {
+  display: flex;
+  align-items: center;  /* dono ko same line me center kar dega */
+         
+}
+
+.logo {
+  background-image: url("D.R-removebg-preview.png");
+  height: 60PX;
+  width: 50px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.logo2 {
+  background-image: url("logo2.png");
+  height: 60px;  /* same height rakho taaki align sahi ho */
+  width: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+
+/* Search */
+.search-opt {
+  display: flex;
+  align-items: center;
+  width: 450px;
+  height: 38px;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 2px solid transparent;
+  background: #222;
+}
+
+.search-opt:hover {
+  border: 2px solid orange;
+}
+
+.search-select {
+  background: #333;
+  color: white;
+  border: none;
+  padding: 0 10px;
+  height: 100%;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.search-input {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  font-size: 1rem;
+  background: #111;
+  color: white;
+}
+
+.search-input::placeholder {
+  color: #aaa;
+}
+
+/* Right side icon */
+.search-icon {
+  margin-left: 20px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.search-icon:hover {
+  transform: scale(1.2);
+  color: orange;
+}
+
+.icon {
+  font-size: 28px;
+}
+ul{
+  list-style-type: none;
+  color: white;
+
+}
+ul li{
+  display: inline-block;
+  padding: 10px;
+
+}
+ul li:hover{
+  
+  background-color: green;
+  color: white;
+}
+.dropdown{
+  display: none;
+ }
+ul li:hover .dropdown{
+  display: block;
+  position: absolute;
+  background-color: #111;
+ 
+ margin-top: 12px;
+ margin-left: -10px;
+}
+.dropdown ul li{
+  display: block;
+}
+.drop-downmenu{
+  cursor: pointer;
+}
+.herosection{
+  background-image: url("ai-generated-8785420_1280.jpg");
+  height: 750px;
+  width: 1350px;
+  background-size: cover; 
+  background-repeat: no-repeat;
+  display: flex;
+
+  
+}
+.herosection2{
+  color: white;
+font-size: 3.0rem;
+  margin-top: 125px;
+  margin-left: 50px;
+
+  font-family: 'poppins';
+  
+}
+.text{
+
+font-size: 1.2rem;
+margin-left: 60px;
+margin-top: 15px;
+  color: #d0d9d1;
+}
+.hero-btn{
+  font-size: 2rem;
+  margin-top: 30px;
+  margin-left: 100px;
+  padding: 9px 10px;
+  background-color: #df6908;
+  color: white;
+border: none;
+border-radius: 10px;
+cursor: pointer;
+ border: 3px solid transparent;
+ transition: all 0.3s ease ;
+
+}
+
+.hero-btn:hover{
+
+ border: 3px solid black;
+ box-shadow: 0px 4px 12px rgba(0px, 0px, 0px, 0.5px);
+ transform: scale(1.05);
+}
+.deatils{
+
+  display: flex;
+  padding: 20px;
+/* justify-content: space-around;   */
+}
+
+
+.news{
+  
+  background-image: url('Gemini_Generated_Image_b5u275b5u275b5u2.png');
+  height: 250px;
+  width: 250px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 50px;
+margin-left: 20px;
+
+
+}
+
+.news p {
+    /* Position the text on top of the image */
+    position: absolute;
+top: 835px;
+left: 30px;
+
+    color: white; /* Choose a color that stands out */
+    font-size: 2rem;
+    font-weight: bold;
+
+}
+.small{
+   display: flex ;
+   font-size: 1.5rem;
+   align-items: center;
+   justify-content: center;
+   height: 35px;
+   width: 80px;
+   cursor: pointer;
+   position: absolute;
+   top: 1090px;
+   background-color:#df6908;
+   color: white;
+   left: 115px;
+   border: none;
+border-radius: 10px;
+
+}
+.background{
+  display: flex;
+  background-image: url('27269.jpg');
+  height: 550px;
+  background-size: cover;
+  
+
+
+}
+
+
+.news2{
+   background-image: url('Gemini_Generated_Image_v76cq0v76cq0v76c.png');
+  height: 250px;
+  width: 250px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 50px;
+margin-left: 200px;
+
+}
+.deatils2{
+  display: flex;
+  padding: 20px;
+}
+
+.small2{
+   display: flex ;
+   font-size: 1.5rem;
+   align-items: center;
+   justify-content: center;
+   height: 35px;
+   width: 80px;
+   cursor: pointer;
+   position: absolute;
+   top: 1090px;
+   background-color:#df6908;
+   color: white;
+   left: 610px;
+   border: none;
+border-radius: 10px;
+
+}
+.news3{
+   background-image: url('Gemini_Generated_Image_wxprrnwxprrnwxpr.png');
+  height: 250px;
+  width: 250px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 50px;
+margin-left: 200px;
+
+}
+.deatils3{
+  display: flex;
+  padding: 20px;
+}
+
+.small3{
+   display: flex ;
+   font-size: 1.5rem;
+   align-items: center;
+   justify-content: center;
+   height: 35px;
+   width: 80px;
+   cursor: pointer;
+   position: absolute;
+   top: 1090px;
+   background-color:#df6908;
+   color: white;
+   left: 1100px;
+   border: none;
+border-radius: 10px;
+
+}
+
+/*footer*/
+.footer {
+  display: flex;
+  justify-content: space-between; /* left aur right alag side */
+  align-items: center;
+  background-color: black;
+  height: 90px;
+  width: 100%;
+  padding: 0 40px;
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* space between items */
+}
+
+.footer-left p {
+  color: white;
+  margin: 0;
+  cursor: pointer;
+  position: relative;
+}
+.footer-left p::after{
+  content: "";
+  color: white;
+  margin: 0;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0  ;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3 ease;
+}
+.footer-left p:hover::after {
+  width: 100%;
+}
+
+.footer-right p {
+  color: white;
+  margin: 0;
+}
+
+.instagram, .twitter, .youtube {
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+ /* 📱 Mobile Responsive Fix */
+@media(max-width: 768px) {
+  .nav-bar {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .search-opt {
+    width: 100%;
+  }
+
+  .herosection {
+    width: 100%;
+    height: 60vh; /* mobile screen ke liye kam height */
+    background-position: center;
+  }
+
+  .hero-text-section {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .background {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .deatils, .deatils2, .deatils3 {
+    margin: 20px 0;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    padding: 15px;
+  }
+}
