@@ -1,0 +1,398 @@
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+  }
+
+  .nav-bar {
+    background-color: #0d0d0d;
+    height: 60px;
+    width: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+
+
+
+  /* Left side logo */
+  .mylogo {
+    height: 15vh;
+    
+  }
+
+  .logo-section {
+
+    display: flex;
+    align-items: center;  /* dono ko same line me center kar dega */
+          
+  }
+
+
+
+
+  /* Search */
+  .search-opt {
+    display: flex;
+    align-items: center;
+    width: 35%;
+    height: 60%;
+    border-radius: 6px;
+    overflow: hidden;
+    border: 2px solid transparent;
+    background: #222;
+    
+  }
+
+  .search-opt:hover {
+    border: 2px solid orange;
+  }
+
+  .search-select {
+    background: #333;
+    color: white;
+    border: none;
+    
+    height: 100%;
+    font-size: 0.9rem;
+    cursor: pointer;
+  }
+
+  .search-input {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    font-size: 1rem;
+    background: #111;
+    color: white;
+  }
+
+  .search-input::placeholder {
+    color: #aaa;
+  }
+
+  /* Right side icon */
+  .search-icon {
+    margin-left: 20px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+
+  .search-icon:hover {
+    transform: scale(1.2);
+    color: orange;
+  }
+
+  .icon {
+    font-size: 2rem;
+  }
+  ul{
+    list-style-type: none;
+    color: white;
+
+  }
+  ul li{
+    display: inline-block;
+    padding: 10px;
+
+  }
+  ul li:hover{
+    
+    background-color: green;
+    color: white;
+  }
+  ul li {
+    position: relative;
+  }
+
+  .dropdown{
+    display: none;
+  }
+  
+  ul li:hover .dropdown{
+    display: block;
+    position: absolute;
+    background-color: #111;
+  
+  margin-top: 12px;
+  margin-left: -10px;
+  }
+  .dropdown ul li{
+    display: block;
+  }
+  .drop-downmenu{
+    cursor: pointer;
+  }
+  ul li ul {
+    background: black;
+    width: 150px;   /* jitna chahiye utna rakho */
+    height: auto;   /* ya fixed height do, jaise 200px */
+    padding: 0;
+    margin: 0;
+  }
+
+  ul li ul li {
+    display: block;     /* har item ek line me */
+
+  }
+
+  .herosection{
+    background-image: url("ai-generated-8785420_1280.jpg");
+    height: 100vh;
+  width: 100%;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    display: flex;
+
+    
+  }
+  .herosection2{
+    color: white;
+  font-size: 3.0rem;
+    margin-top: 125px;
+    margin-left: 50px;
+
+    font-family: 'poppins';
+    
+  }
+  .text{
+
+  font-size: 1.2rem;
+  margin-left: 60px;
+  margin-top: 15px;
+    color: #d0d9d1;
+  }
+  .hero-btn{
+    font-size: 2rem;
+    margin-top: 30px;
+    margin-left: 12%;
+    padding: 0.6rem 1.2rem;
+    background-color: #df6908;
+    color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 3px solid transparent;
+  transition: all 0.3s ease ;
+
+  }
+
+  .hero-btn:hover{
+
+  border: 3px solid black;
+  box-shadow: 0px 4px 12px rgba(0px, 0px, 0px, 0.5px);
+  transform: scale(1.05);
+  }
+
+
+  .background{
+
+    background-image: url('27269.jpg');
+    height: 90% ;
+    background-size: cover;
+
+
+
+  }
+  .news{
+    display: flex;
+
+  }
+
+  .FEATURED{
+
+    font-size: 2rem;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: absolute;
+  margin-top: 50px;
+  margin-left: 20px;
+    
+  }
+
+  .games{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .img1{
+    height: 35vh;
+    margin-top: 100px;
+
+
+  }
+
+  .btn{
+    display: flex;
+    justify-content: space-around;
+    
+  }
+  .small{
+    display: flex ;
+    font-size: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 80px;
+    cursor: pointer;
+    margin-top: 20px;
+    background-color:#df6908;
+    color: white;
+
+    border: none;
+  border-radius: 10px;
+
+  }
+.game-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+
+
+
+
+  /*footer*/
+  .footer {
+    display: flex;
+    justify-content: space-between; /* left aur right alag side */
+    align-items: center;
+    background-color: black;
+    height: 90px;
+    width: 100%;
+    padding: 0 40px;
+  }
+
+  .footer-left {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* space between items */
+  }
+
+  .footer-left p {
+    color: white;
+    margin: 0;
+    cursor: pointer;
+    position: relative;
+  }
+  .footer-left p::after{
+    content: "";
+    color: white;
+    margin: 0;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0  ;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3 ease;
+  }
+  .footer-left p:hover::after {
+    width: 100%;
+  }
+
+  .footer-right p {
+    color: white;
+    margin: 0;
+  }
+
+  .instagram, .twitter, .youtube {
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+
+
+
+
+  @media (max-width: 488px) {
+
+
+    
+    /* Logo */
+    .mylogo {
+      height: 10vh;
+
+
+
+    }
+
+    /* Search bar */
+    .search-opt {
+      width: 90%;           /* chhoti screen me thoda kam width */
+      height: 40px;         /* fixed height */
+      margin: 0 5px;        /* left-right gap */
+    }
+
+    .search-select {
+      font-size: 0.9rem;    /* chhota text */
+      padding: 0.4px;
+    }
+
+    .search-input {
+      font-size: 0.9rem;
+      padding: 6px;
+    }
+
+    /* Search icon */
+    .search-icon {
+    margin: 10px;
+      
+    }
+  
+  .nav-bar{
+
+      flex-direction: column;
+      height: auto;
+
+    }
+
+
+  .background{
+
+    background-image: url('27269.jpg');
+    height: 100%;
+    background-size: cover;
+
+
+
+  }
+   .img1{
+    height: 35vh;
+       
+
+  
+
+  }
+
+   .footer{
+    
+
+      flex-direction: column;
+height: auto;
+
+
+   }
+  .footer-right{
+    margin-top: 20px;
+  }
+.footer-left{
+  margin-top:30px ;
+}
+  
+  }
+
+
+
+
+
+
+
+
+
+
