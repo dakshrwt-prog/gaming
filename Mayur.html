@@ -19,13 +19,21 @@
         .bg {
             height: 100vh; /* viewport height */
             width: 100vw;  /* viewport width */
-            background-image: url('mayur.jpeg');
+            background-image: url('./assets/mayur.jpeg');
             background-repeat: no-repeat;
             background-size: cover;  /* image cover kare poora screen */
             background-position: center; /* center me align rahe */
         }
 
-
+  @media screen and (max-width:470px) {
+         .bg {
+            
+          
+            background-repeat: repeat;
+            background-size: contain;  /* image cover kare poora screen */
+            background-position: center; /* center me align rahe */
+        }
+      }
     </style>
 </head>
 <body>
